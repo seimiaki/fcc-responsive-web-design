@@ -1,0 +1,267 @@
+/* =========================================
+   RESET & GLOBAL STYLES
+========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    
+    background:
+        linear-gradient(135deg,
+            #081c15,
+            #1b4332,
+            #081c15);
+
+    font-family: serif;
+}
+
+::selection {
+    background: crimson;
+    color: white;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.hero {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.tag {
+    color: #f5c542;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .85rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    color: white;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-shadow:
+        0 4px 20px rgba(0,0,0,.45),
+        0 0 25px rgba(255,255,255,.08);
+}
+
+.subtitle {
+    max-width: 700px;
+    color: rgba(255,255,255,.85);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    color: white;
+    text-decoration: none;
+    background: #c1121f;
+    padding: 14px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .25s;
+}
+
+/* =========================================
+   DECK LAYOUT
+========================================= */
+#playing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    aspect-ratio: 5 / 7;
+
+    background: white;
+
+    border-radius: 20px;
+    border: 2px solid #ececec;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25),
+        0 2px 5px rgba(0,0,0,.15);
+
+    position: relative;
+
+}
+
+/* =========================================
+   INTERACTIONS
+========================================= */
+
+.card:nth-child(even):hover {
+    transform: rotate(3deg) translateY(-10px);
+}
+
+.card:nth-child(odd):hover {
+    transform: rotate(-3deg) translateY(-10px);
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: #e63946;
+}
+
+/* =========================================
+   PLAYING CARDS
+========================================= */
+.left {
+    align-self: flex-start;
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+}
+
+.middle {
+    align-self: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.right {
+    align-self: flex-end;
+    position: absolute;
+
+    bottom: 15px;
+    right: 15px;
+
+    transform: rotate(180deg);
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    font-size: 50px;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+.rank {
+    font-size: 32px;
+}
+
+.suit {
+    font-size: 29px;
+}
+
+.large {
+    font-size: 90px;
+}
+
+.pip {
+    font-size: 45px;
+}
+
+/* =========================================
+   FACE CARDS (J, Q, K)
+========================================= */
+.face {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.face-rank {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Times New Roman", serif;
+    line-height: 1;
+}
+
+.face-suit {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* =========================================
+    COLORS
+========================================= */
+.heart, .diamond {
+    color: crimson;
+}
+
+.spade, .flower {
+    color: black;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .small {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+}

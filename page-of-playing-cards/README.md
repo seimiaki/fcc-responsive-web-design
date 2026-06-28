@@ -1,8 +1,14 @@
-## ♠ Poker Playing Cards
+<h1 align="center">♠ Page of Playing Cards</h1>
 
-A responsive collection of classic playing cards built entirely with HTML5 and CSS3. This project was created as part of the freeCodeCamp Responsive Web Design curriculum to practice semantic HTML, Flexbox, responsive layouts, and modern CSS styling.
+<p align="center"> A modern, responsive collection of classic playing cards built with <strong>HTML5</strong> and <strong>CSS3</strong>. </p>
 
-## Features
+<p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/Responsive-Design-success?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"> </p>
+
+## 📸 Preview
+
+<p align="center"> <img src="assets/preview-1.png" alt="Preview 1" width="31%"> <img src="assets/preview-2.png" alt="Preview 2" width="31%"> <img src="assets/preview-3.png" alt="Preview 3" width="31%"> </p>
+
+## ✨ Features
 
 - Complete playing card deck (A–10, J, Q, K)
 - Built entirely with HTML & CSS
@@ -12,37 +18,34 @@ A responsive collection of classic playing cards built entirely with HTML5 and C
 - Footer with project attribution
 - Clean and organized CSS structure
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 <p>
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=html,css,vscode,git,github" />
 </p>
 
-## Project Structure
+## 🚀 Running Locally
 
-poker-playing-cards/ ├── index.html ├── styles.css └── README.md
+1. Clone the repository.
 
-## Getting Started
+```bash
+git clone https://github.com/seimiaki/fcc-responsive-web-design.git
+```
 
-IN PROGRESS
+2. Navigate to the project folder.
 
-## Usage
+```bash
+cd fcc-responsive-web-design/page-of-playing-cards
+```
 
-This project is intended for educational and personal learning purposes.
+3. Open `index.html` in your preferred web browser.
 
-You are welcome to:
+No installation, build tools, or additional dependencies are required.
 
-- Study the source code.
-- Modify it for personal projects.
-- Use it as inspiration while learning.
 
-Please do not redistribute or claim this project as your own. If you publicly use portions of the project, attribution is appreciated.
-
-## License
+## 📜 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](../LICENSE) file for details
 
+---
 If you found this project helpful, consider giving the repository a ⭐.

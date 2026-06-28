@@ -1,0 +1,372 @@
+/* =========================================
+   RESET & GLOBAL STYLES
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+
+    font-family: "Poppins", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(59, 130, 246, .22),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #0f172a,
+            #111827,
+            #020617
+        );
+
+    color: white;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 6rem 1.5rem 5rem;
+}
+
+.tag {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: .45rem 1rem;
+
+    border: 1px solid rgba(96, 165, 250, .25);
+    border-radius: 999px;
+
+    background: rgba(59, 130, 246, .12);
+
+    color: #93c5fd;
+
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(3.2rem, 8vw, 5.5rem);
+    font-weight: 800;
+
+    letter-spacing: -2px;
+    line-height: 1.05;
+
+    text-shadow: 0 6px 30px rgba(0, 0, 0, .35);
+}
+
+.subtitle {
+    max-width: 700px;
+    margin-top: 22px;
+
+    color: #cbd5e1;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.table-container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, .05);
+
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+}
+
+th {
+    padding: 20px 24px;
+
+    color: white;
+
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+td {
+    padding: 20px 24px;
+
+    color: #e2e8f0;
+
+    font-size: .95rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 32px;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 32px;
+}
+
+td:first-child {
+    color: #fff;
+    font-weight: 600;
+}
+
+td:nth-child(2) {
+    color: #cbd5e1;
+}
+
+td:nth-child(3) {
+    color: #93c5fd;
+    font-weight: 500;
+}
+
+/* =========================================
+   TABLE ROW STYLES
+========================================= */
+
+tr[class="read"] {
+    background-image: linear-gradient(
+        90deg,
+        rgba(34, 197, 94, .15),
+        rgba(22, 163, 74, .05)
+    );
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(
+        90deg,
+        rgba(250, 204, 21, .15),
+        rgba(234, 179, 8, .05)
+    );
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(
+        90deg,
+        rgba(59, 130, 246, .15),
+        rgba(37, 99, 235, .05)
+    );
+}
+
+tbody tr {
+    transition: background .2s ease;
+}
+
+tbody tr:hover {
+    filter: brightness(1.08);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 999px;
+
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .3px;
+
+    transition: .2s;
+}
+
+.status:hover {
+    transform: translateY(-1px);
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid #22c55e;
+
+    background-image: linear-gradient(
+        135deg,
+        rgba(34, 197, 94, .18),
+        rgba(22, 163, 74, .08)
+    );
+
+    color: #86efac;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid #facc15;
+
+    background-image: linear-gradient(
+        135deg,
+        rgba(250, 204, 21, .18),
+        rgba(234, 179, 8, .08)
+    );
+
+    color: #fde68a;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid #3b82f6;
+
+    background-image: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, .18),
+        rgba(37, 99, 235, .08)
+    );
+
+    color: #93c5fd;
+}
+
+/* =========================================
+   RATING INDICATORS
+========================================= */
+
+span {
+    display: inline-block;
+}
+
+span[class="status"],
+span[class^="rate"] {
+    height: 34px;
+    width: auto;
+
+    padding: .45rem .9rem;
+}
+
+span[class^="rate"] {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+span[class^="rate"] > span {
+    width: 12px;
+    height: 12px;
+
+    margin: 0 3px;
+
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+
+    background-color: #334155;
+}
+
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(
+        #60a5fa,
+        #2563eb
+    );
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(
+        #60a5fa,
+        #2563eb
+    );
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(
+        #60a5fa,
+        #2563eb
+    );
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    color: #ddd;
+
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .small {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    opacity: .7;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+}

@@ -8,108 +8,131 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sei Miaki">
 
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
 
         <header class="hero">
-    <span class="tag">HTML • CSS • freeCodeCamp</span>
+            <span class="tag">HTML • CSS • freeCodeCamp</span>
 
-    <h1>Technical Documentation Page</h1>
+            <h1>Technical Documentation Page</h1>
 
-    <p class="subtitle">
-        A responsive documentation project showcasing structured technical
-        content with a fixed sidebar, smooth navigation, and syntax-highlighted
-        code examples.
-    </p>
+            <p class="subtitle">
+                A responsive documentation project showcasing structured technical
+                content with a fixed sidebar, smooth navigation, and syntax-highlighted
+                code examples.
+            </p>
         </header>
 
-        <nav id="nav-bar">
+        <nav id="navbar">
             <header>HTML Basics</header>
-            <a href="#introduction">Introduction</a>
-            <a href="#html-elements">HTML Elements</a>
-            <a href="#attributes">Attributes</a>
-            <a href="#lists">Lists</a>
-            <a href="#forms">Forms</a>
+
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+            <a class="nav-link" href="#Attributes">Attributes</a>
+            <a class="nav-link" href="#Lists">Lists</a>
+            <a class="nav-link" href="#Forms">Forms</a>
         </nav>
 
         <main id="main-doc">
-            <section class="main-section">
-                <header id="introduction">Introduction</header>
-                <p>HTML stands for HyperText Markup Language and is the standard language used to create web pages.</p>
-                <p>HTML provides the structure of a webpage using elements such as headings, paragraphs, images, and links.</p>
-                <pre><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></pre>
-            </section>   
-            
-            <section class="main-section">
-                <header id="html-elements">HTML Elements</header>
-                <p>HTML elements are the building blocks of every webpage.</p>
-                <p>Most elements use an opening tag, content, and a closing tag.</p>
-                <ul>
-                    <li>Headings</li>
-                    <li>Paragraphs</li>
-                    <li>Images</li>
-                </ul>
-                <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-            </section>    
 
-            <section class="main-section">
-                <header id="attributes">Attributes</header>
-                <p>Attributes provide additional information about an HTML element.</p>
-                <p>They are written inside the opening tag.</p>
-                <ul>
-                    <li>href</li>
-                    <li>src</li>
-                    <li>alt</li>
-                </ul>
-                <pre><code>&lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;</code></pre>
-            </section>  
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
 
-            <section class="main-section">
-                <header id="lists">Lists</header>
-                <p>HTML supports ordered and unordered lists.</p>
-                <p>Lists help organize related information.</p>
-                <ul>
-                    <li>Unordered List</li>
-                    <li>Ordered List</li>
-                </ul>
-                <pre><code>
-                    &lt;ul&gt;
-                        &lt;li&gt;Apple&lt;/li&gt;
-                        &lt;li&gt;Banana&lt;/li&gt;
-                    &lt;/ul&gt;
-                </code></pre>
-            </section>  
+            <p>HTML stands for HyperText Markup Language and is the standard language used to create web pages.</p>
+            <p>HTML provides the structure of a webpage using elements such as headings, paragraphs, images, and links.</p>
 
-            <section class="main-section">
-                <header id="forms">Forms</header>
-                <p>Forms allow users to enter and submit information.</p>
-                <p>Common form elements include inputs, labels, and buttons.</p>
-                <ul>
-                    <li>Text Input</li>
-                    <li>Checkbox</li>
-                    <li>Submit Button</li>
-                </ul>
-                <pre><code>
-                    &lt;form&gt;
-                        &lt;input type="text"&gt;
-                        &lt;button&gt;Submit&lt;/button&gt;
-                    &lt;/form&gt;
-                </code></pre>
-            </section>  
-        </main>
-    
-        <footer class="footer">
+            <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+        </section>
+
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+
+            <p>HTML elements are the building blocks of every webpage.</p>
+            <p>Most elements use an opening tag, content, and a closing tag.</p>
+
+            <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Images</li>
+            </ul>
+
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        </section>
+
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+
+            <p>Attributes provide additional information about an HTML element.</p>
+            <p>They are written inside the opening tag.</p>
+
+            <ul>
+                <li>href</li>
+                <li>src</li>
+                <li>alt</li>
+            </ul>
+
+            <code>&lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;</code>
+        </section>
+
+        <section class="main-section" id="Lists">
+            <header>Lists</header>
+
+            <p>HTML supports ordered and unordered lists.</p>
+            <p>Lists help organize related information.</p>
+
+            <ul>
+                <li>Unordered List</li>
+                <li>Ordered List</li>
+            </ul>
+
+            <pre>
+            <code>
+                &lt;ul&gt;
+                    &lt;li&gt;Apple&lt;/li&gt;
+                    &lt;li&gt;Banana&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+            </pre>
+        </section>
+
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+
+            <p>Forms allow users to enter and submit information.</p>
+            <p>Common form elements include inputs, labels, and buttons.</p>
+
+            <ul>
+                <li>Text Input</li>
+                <li>Checkbox</li>
+                <li>Submit Button</li>
+            </ul>
+
+            <pre>
+            <code>
+                &lt;form&gt;
+                    &lt;input type="text"&gt;
+                    &lt;button&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+            </code>
+            </pre>
+        </section>
+
+    </main>
+
+    <footer class="footer">
         <p>© 2026 Sei Miaki. All Rights Reserved.</p>
+
         <p>
             Made with ❤️ for freeCodeCamp • GitHub:
             <a href="https://github.com/seimiaki" target="_blank">@seimiaki</a>
         </p>
+
         <p class="small">
             Feel free to use or modify this project. Credit is appreciated but not required.
         </p>
     </footer>
 
-    </body>
+</body>
 </html>

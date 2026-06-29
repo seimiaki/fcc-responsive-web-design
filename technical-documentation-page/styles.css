@@ -1,5 +1,5 @@
 /* =========================================
-    FONT
+   FONT
 ========================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -30,6 +30,7 @@ body {
 
     line-height: 1.7;
 }
+
 
 /* =========================================
    HERO SECTION
@@ -94,33 +95,10 @@ body {
 
 
 /* =========================================
-   HERO RESPONSIVE
+   SIDEBAR (NAVBAR)
 ========================================= */
 
-@media (max-width: 850px) {
-
-    .hero {
-        margin-left: 0;
-
-        min-height: auto;
-
-        align-items: center;
-        text-align: center;
-
-        padding: 3rem 1.5rem 2.5rem;
-    }
-
-    .subtitle {
-        max-width: 100%;
-    }
-
-}
-
-/* =========================================
-   SIDEBAR
-========================================= */
-
-#nav-bar {
+#navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -134,7 +112,7 @@ body {
     border-right: 1px solid #30363d;
 }
 
-#nav-bar header {
+#navbar header {
     font-size: 28px;
     font-weight: 700;
 
@@ -143,7 +121,7 @@ body {
     margin-bottom: 35px;
 }
 
-#nav-bar a {
+#navbar a {
     display: block;
 
     padding: 12px 16px;
@@ -158,7 +136,7 @@ body {
     transition: .25s;
 }
 
-#nav-bar a:hover {
+#navbar a:hover {
     background: rgba(88, 166, 255, .12);
     color: #58a6ff;
 }
@@ -230,9 +208,11 @@ li {
    CODE BLOCKS
 ========================================= */
 
-pre {
-    margin-top: 25px;
-    padding: 22px;
+code {
+    display: block;
+
+    padding: 18px;
+    margin-top: 20px;
 
     overflow-x: auto;
 
@@ -243,16 +223,14 @@ pre {
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 14px;
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, .35),
-        inset 0 1px 0 rgba(255, 255, 255, .04);
-}
+    color: #7ee787;
 
-code {
     font-family: Consolas, monospace;
     font-size: 15px;
 
-    color: #7ee787;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .35),
+        inset 0 1px 0 rgba(255, 255, 255, .04);
 }
 
 
@@ -291,7 +269,6 @@ code {
     text-align: center;
 
     background: #161b22;
-
     border-top: 1px solid #30363d;
 
     color: #8b949e;
@@ -305,8 +282,7 @@ code {
 .footer a {
     color: #58a6ff;
     text-decoration: none;
-
-    transition: color .25s;
+    transition: .25s;
 }
 
 .footer a:hover {
@@ -316,9 +292,7 @@ code {
 
 .footer .small {
     margin-top: 15px;
-
     font-size: .82rem;
-
     color: #6e7681;
 }
 
@@ -333,15 +307,15 @@ code {
         flex-direction: column;
     }
 
-    #nav-bar {
+    #navbar {
         position: relative;
+
+        width: 100%;
+        height: auto;
 
         display: flex;
         align-items: center;
         gap: 10px;
-
-        width: 100%;
-        height: auto;
 
         overflow-x: auto;
 
@@ -353,11 +327,11 @@ code {
         border-bottom: 1px solid #30363d;
     }
 
-    #nav-bar header {
+    #navbar header {
         display: none;
     }
 
-    #nav-bar a {
+    #navbar a {
         margin: 0;
         flex-shrink: 0;
     }
@@ -367,8 +341,20 @@ code {
         padding: 25px;
     }
 
+    .hero {
+        margin-left: 0;
+
+        text-align: center;
+        align-items: center;
+
+        padding: 3rem 1.5rem 2.5rem;
+    }
+
+    .subtitle {
+        max-width: 100%;
+    }
+
     .footer {
-        margin-top: 40px;
         padding: 35px 20px;
     }
 }
